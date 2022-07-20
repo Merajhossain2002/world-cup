@@ -26,6 +26,10 @@ header area start
   width: 50%;
 }
 .child-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 5% 5% 5% 5%;
   box-sizing: border-box;
 }
@@ -142,11 +146,43 @@ footer nav {
   justify-content: space-evenly;
   align-items: center;
 }
-footer nav a{
+footer nav a {
   text-decoration: none;
-  color:  #B9B9B9;
+  color: #b9b9b9;
 }
 
 /*^^^^^^^^^^^^^^^^^^^^^^^^
 footer END
 ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/*-----------------
+    media queries
+------------------- */
+
+/*///// mobile device \\\\\*/
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 334px;
+  }
+  .banner-container{
+    flex-direction: column;
+  }
+  .banner-child{
+    width: 100%;
+  }
+  .banner-head{
+    font-size: 22px;
+    text-align: center;
+  }
+  .banner-text{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .banner-image{
+    padding: 0% 15% 0% 15%;
+  }
+
+
+}
