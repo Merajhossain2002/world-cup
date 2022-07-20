@@ -139,6 +139,21 @@ header area end
   border-radius: 10px;
   box-sizing: border-box;
 }
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+.blog-align2 {
+  text-align: center;
+}
+.blog-align2 h3 {
+  font-size: 20px;
+}
+.blog-align2 p {
+  font-size: 14px;
+}
 .blog-btn {
   cursor: pointer;
   font-weight: 700;
@@ -207,7 +222,6 @@ footer start
 ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 footer {
   background-color: #161616;
-
 }
 .f-div {
   width: 100%;
@@ -224,7 +238,7 @@ footer hr {
   background: #ffffff1a;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-footer  div  nav {
+footer div nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -234,14 +248,14 @@ footer nav a {
   color: #b9b9b9;
   padding: 10px;
 }
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5%;
   padding: 10px;
 }
-.social a{
+.social a {
   color: #b9b9b9;
   padding: 10px;
   font-size: 30px;
@@ -310,7 +324,7 @@ footer END
   footer nav a {
     margin-bottom: 20px;
   }
-  .social{
+  .social {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
