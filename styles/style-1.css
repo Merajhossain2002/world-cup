@@ -117,6 +117,20 @@ header area end
 .blog-info {
   margin-right: 30px;
 }
+.tab-only {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.tab-btn {
+  display: none;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
 
 /*//////////////////////////
           Blog END
@@ -128,8 +142,10 @@ footer start
 footer {
   background-color: #161616;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.f-div{
+  width: 100%;
+  height: auto;
 }
 footer h1 {
   text-align: center;
@@ -163,26 +179,94 @@ footer END
 
 @media only screen and (max-width: 375px) {
   .container {
-    width: 334px;
+    width: 90%;
   }
-  .banner-container{
+  .banner-container {
     flex-direction: column;
   }
-  .banner-child{
+  .banner-child {
     width: 100%;
   }
-  .banner-head{
+  .banner-head {
     font-size: 22px;
     text-align: center;
   }
-  .banner-text{
+  .banner-text {
     font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
-  .banner-image{
+  .banner-image {
     padding: 0% 15% 0% 15%;
   }
 
+  .blog {
+    grid-template-columns: 1fr;
+  }
+  .blog-nav {
+    background-color: white;
+  }
+  .blog-btn {
+    border: 1px solid lightgray;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+    margin-bottom: 30%;
+  }
+  footer div {
+    width: 100%;
+  }
+  footer h1 {
+    font-size: 22px;
+  }
+  footer nav {
+    flex-direction: column;
+  }
+  footer nav a {
+    margin-bottom: 20px;
+  }
+}
 
+/*///// Tab device \\\\\*/
+
+@media only screen and (min-width: 376px) and (max-width: 834px) {
+  .container {
+    width: 734px;
+  }
+  .child-1 {
+    align-items: flex-start;
+  }
+  .banner-head {
+    font-size: 40px;
+  }
+  .banner-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .banner-image {
+    width: 100%;
+    padding-top: 70px;
+    padding-right: 20px;
+  }
+  .blog {
+    grid-template-columns: 1fr;
+  }
+  .blog-nav {
+    flex-direction: row;
+    background-color: white;
+    height: auto;
+  }
+  .blog-btn {
+    width: 10rem;
+    border: 1px solid lightgray;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tab-btn {
+    display: inline-block;
+  }
+  .f-div{
+    width: 100%;
+  }
 }
