@@ -1,0 +1,15 @@
+.flag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+.blog-align2{
+  text-align: center;
+}
+.blog-align2 h3{
+  font-size: 20px;
+}
+.blog-align2 p{
+font-size: 14px;
+}
