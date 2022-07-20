@@ -52,11 +52,70 @@ header area start
   border-radius: 7px;
   margin-top: 2%;
 }
+.btn:hover {
+  background-color: blue;
+}
 .banner-image {
   width: 100%;
   padding-top: 60px;
   padding-right: 80px;
   box-sizing: border-box;
+}
+@keyframes football-annimation {
+  0% {
+    bottom: 20px;
+    left: 20px;
+  }
+  10% {
+    left: 100px;
+    bottom: 100px;
+  }
+  20% {
+    left: 200px;
+    bottom: 20px;
+  }
+  30% {
+    left: 300px;
+    bottom: 100px;
+  }
+  40% {
+    bottom: 20px;
+    left: 400px;
+  }
+  50% {
+    bottom: 100px;
+    left: 500px;
+  }
+  60% {
+    bottom: 20px;
+    left: 600px;
+  }
+  70% {
+    bottom: 100px;
+    left: 700px;
+  }
+  80% {
+    bottom: 20px;
+    left: 800px;
+  }
+  90% {
+    bottom: 100px;
+    left: 900px;
+  }
+  100% {
+    bottom: 20px;
+    left: 1000px;
+  }
+}
+.football {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 150px;
+  height: 100px;
+  animation: football-annimation 4s linear 0s infinite alternate;
+  animation-play-state: running;
+  transform-origin: left;
 }
 /*----------------------------
 header area end
@@ -90,7 +149,7 @@ header area end
   border: none;
   border-radius: 10px;
 }
-.up-btn{
+.up-btn {
   text-decoration: none;
   color: black;
 }
@@ -150,7 +209,7 @@ footer {
   background-color: #161616;
   display: flex;
 }
-.f-div{
+.f-div {
   width: 100%;
   height: auto;
 }
@@ -194,7 +253,7 @@ footer END
   .banner-child {
     width: 100%;
   }
-  .child-1{
+  .child-1 {
     align-items: center;
   }
   .banner-head {
@@ -209,7 +268,9 @@ footer END
   .banner-image {
     padding: 0% 15% 0% 15%;
   }
-
+  .football{
+    display: none;
+  }
   .blog {
     grid-template-columns: 1fr;
   }
@@ -258,6 +319,9 @@ footer END
     padding-top: 70px;
     padding-right: 20px;
   }
+  .football{
+    display: none;
+  }
   .blog {
     grid-template-columns: 1fr;
   }
@@ -276,7 +340,7 @@ footer END
   .tab-btn {
     display: inline-block;
   }
-  .f-div{
+  .f-div {
     width: 100%;
   }
 }
