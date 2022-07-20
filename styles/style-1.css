@@ -6,6 +6,55 @@
 /*-------------------
       common style
 ---------------------*/
-body {
+.container {
+  width: 1200px;
   font-family: "Roboto", sans-serif;
+  margin: 0px auto;
+  padding: 0px auto;
 }
+/*----------------------------
+header area start
+------------------------------*/
+
+.banner-container {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.banner-child {
+  width: 50%;
+}
+.child-1 {
+  padding: 5% 5% 5% 5%;
+  box-sizing: border-box;
+}
+.banner-head {
+  color: white;
+  font-weight: 700;
+  font-size: 70px;
+}
+.banner-text {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 7px;
+  margin-top: 2%;
+}
+.banner-image {
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+/*----------------------------
+header area end
+------------------------------*/
