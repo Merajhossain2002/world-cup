@@ -271,7 +271,7 @@ footer END
 
 /*///// mobile device \\\\\*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .container {
     width: 90%;
   }
@@ -333,7 +333,7 @@ footer END
 
 /*///// Tab device \\\\\*/
 
-@media only screen and (min-width: 376px) and (max-width: 834px) {
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
   .container {
     width: 734px;
   }
